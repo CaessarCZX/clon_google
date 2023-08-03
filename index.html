@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Clone</title>
     <link rel="stylesheet" href="./src/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="h-block__links">
             <div class="h-block__links--txt">
-                <a href="#">Gmail</a>
-                <a href="#">Imágenes</a>
+                <a class="links__txt__item" href="#">Gmail</a>
+                <a class="links__txt__item" href="#">Imágenes</a>
             </div>
             <div class="h-block__links--icon">
                 <a href="#"><img src="" alt="Application box" title="Cajón de aplicaciones"></a>
@@ -32,7 +35,11 @@
         </section>
     </main>
     <footer>
-        <div class="f-block border-bottom"></div>
+        <div class="f-block border-bottom">
+            <div class="f-block__user-location left-pos-bk">
+                <a class="f-link" href="#">México</a>
+            </div>
+        </div>
         <div class="f-block">
             <nav class="f-block__sections">
                 <ul class="f-block__services-info left-pos-flx">
@@ -42,7 +49,9 @@
                     <li><a class="f-link" href="#">Cómo funciona la Búsqueda</a></li>
                 </ul>
                 <ul class="f-block__services-info right-pos-flx">
-                    <li><a class="f-link" href="#">Sobre Google</a></li>
+                    <li><a class="f-link" href="#">Privacidad</a></li>
+                    <li><a class="f-link" href="#">Condiciones</a></li>
+                    <li><a class="f-link" href="#">Preferencias</a></li>
                 </ul>
             </nav>
         </div>
