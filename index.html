@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Clone</title>
+    <link rel="shortcut icon" href="./src/assets/media/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="h-block__links">
             <div class="h-block__links--txt">
-                <a class="links__txt__item" href="#">Gmail</a>
-                <a class="links__txt__item" href="#">Imágenes</a>
+                <a class="links__txt__item link-classic-hover" href="#">Gmail</a>
+                <a class="links__txt__item link-classic-hover" href="#">Imágenes</a>
             </div>
             <div class="h-block__links--icon">
-                <a href="#"><img src="" alt="Application box" title="Cajón de aplicaciones"></a>
-                <a href="#"><img src="" alt="Usuario" title="Mi usuario"></a>
+                <a class="links__img__item" href="#">
+                    <img class="h-block__img__item" src="./src/assets/media/img/goo_box_app.svg" alt="Application box" title="Google Apps">
+                </a>
+                <a class="links__img__item tny-padd" href="#">
+                    <div class="h-block__profile__frame">
+                        <img class="h-block__img__item pos-custom-x-y" src="./src/assets/media/img/goo_user_tmp.svg" alt="Usuario" title="Cuenta de Google">
+                    </div>
+                </a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="main-container">
         <section class="logo-sect">
-            <a href="#"><img src="" alt="Google"></a>
+            <a class="logo-sect__container" href="#">
+                <img class="main-logo" src="./src/assets/media/img/goo-logo.png" alt="Google">
+            </a>
         </section>
         <section class="searcher-sect">
-            <form action="#" method="get">
-                <input type="text" id="input-search">
-                <button id="search">Buscar con Google</button>
-                <button id="lucky">Voy a tener suerte</button>
+            <form class="searcher-container" action="#" method="get">
+                <div class="searcher-container__search-bar">
+                    <div class="search-bar__icon center-in-flex">
+                        <div class="search-bar__icon--wrapper">
+                            <img class="search-bar__icon__img" src="./src/assets/media/img/goo_search.svg" alt="search">
+                        </div>
+                    </div>
+                    <input type="text" class="search-bar__input--txt zero-border-no-bg" id="input-search">
+                    <div class="search-bar__features">
+                        <a class="search-bar__icon center-in-flex" href="#">
+                            <div class="search-bar__icon--wrapper">
+                                <img class="search-bar__icon__img resize-less-60 pos-custom-y" src="./src/assets/media/img/goo_mic.svg" alt="google mic">
+                            </div>
+                        </a>
+                        <a class="search-bar__icon center-in-flex" href="#">
+                            <div class="search-bar__icon--wrapper">
+                                <img class="search-bar__icon__img" src="./src/assets/media/img/goo_lens.svg" alt="google lens">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="searcher-container__buttons">
+                    <button id="search">Buscar con Google</button>
+                    <button id="lucky">Voy a tener suerte</button>
+                </div>
             </form>
         </section>
     </main>
@@ -57,4 +89,5 @@
         </div>
     </footer>
 </body>
+
 </html>
