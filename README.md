@@ -4,3 +4,7 @@
 
 ### Google Clone
 This is a Google clone, replicating the look and feel of Google's search page
+
+<div align="center">
+<img src="./src/project/media/goo-clone-screenshot.png" alt="Google screenshot"/>
+</div>
