@@ -3,6 +3,8 @@
     --color-hover-icon-lk: #eff0f0;
     --color-soft-border: #dfe1e5;
     --color-button-default: #f8f9fa;
+    --color-footer-bg: #f2f2f2;
+    --color-footer-link: #70757a;
 }
 
 * {
@@ -76,6 +78,10 @@ body {
     width: 100%;
     justify-content: center;
     align-items: flex-end;
+}
+
+.main-container {
+    min-height: calc(100vh - 95px - 60px);
 }
 
 .logo-sect__container {
@@ -159,7 +165,53 @@ body {
     font-size: 0.88rem;
 }
 
+.spacer-sec {
+    height: 25vh;
+}
+
+/* footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+.f-block {
+    background-color: var(--color-footer-bg);
+}
+
+.f-link {
+    text-decoration: none;
+    color: var(--color-footer-link);
+    font-size: 0.88rem;
+}
+
+.f-block__user-location {
+    display: inline-block;
+    padding-block: 0.87rem;
+    margin-inline: 2rem;
+}
+
+.f-block__sections {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-block__services-info {
+    display: inherit;
+    list-style-type: none;
+    padding-block: 0.87rem;
+    margin-inline: 2.3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
 /*  Utils  */
+
+.border-bottom {
+    border-bottom: solid 1px var(--color-soft-border);
+}
 
 .zero-border-no-bg {
     border: 0;
