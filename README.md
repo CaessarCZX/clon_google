@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./src/assets/media/img/goo-logo.png" width="348.61" height="100" alt="SVGO logo"/>
+  <img src="./src/assets/media/img/goo-logo.png" width="348.61" height="110" alt="Google logo"/>
 </div>
 
 ### Google Clone
